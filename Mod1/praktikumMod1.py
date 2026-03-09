@@ -1,0 +1,16 @@
+
+#NO1 
+def isKabisat(tahun: int) -> bool:
+    if (tahun % 4 == 0 and tahun % 100 != 0) or (tahun % 400 == 0):
+        return True
+    else:
+        return False
+
+tahun = int(input("Masukkan tahun: "))
+
+hasil = isKabisat(tahun)
+
+if hasil:
+    print(tahun, "True")
+else:
+    print(tahun, "False")
